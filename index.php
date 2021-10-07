@@ -9,7 +9,7 @@ Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre 
 $text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.";
 // Una parola da censurare viene passata dall'utente tramite parametro GET.
 $badword = $_GET["key"];
-$newText = str_replace($text, "***", $badword);
+$newText = str_replace($badword, "***", $text);
 ?>
 
 <!-- Stampare a schermo il paragrafo e la sua lunghezza. -->
